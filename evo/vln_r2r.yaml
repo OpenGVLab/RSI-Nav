@@ -1,0 +1,58 @@
+# @package _global_
+# habitat-lab v0.3.x compatible config for R2R VLN evaluation.
+#
+# Habitat-Lab v0.3.x config for rendering continuous_srdf trajectories in get_img_rank.py.
+# Episodes are injected from jsonl by the script; data_path is only kept as a valid dataset stub.
+
+defaults:
+  - /habitat: habitat_config_base
+  - /habitat/task: vln_r2r
+  - /habitat/simulator/agents@habitat.simulator.agents.main_agent: agent_base
+  - /habitat/dataset/vln: mp3d_r2r
+  - /habitat/task/lab_sensors:
+    - gps_sensor
+    - compass_sensor
+  - _self_
+
+habitat:
+  environment:
+    max_episode_steps: 300
+    iterator_options:
+      max_scene_repeat_steps: 50000
+      shuffle: False
+  simulator:
+    agents:
+      main_agent:
+        sim_sensors:
+          rgb_sensor:
+            type: HabitatSimRGBSensor
+            width: 640
+            height: 480
+            hfov: 79
+          depth_sensor:
+            type: HabitatSimDepthSensor
+            width: 640
+            height: 480
+            hfov: 79
+            min_depth: 0.0
+            max_depth: 10.0
+            normalize_depth: True
+    forward_step_size: 0.25
+    turn_angle: 15
+    habitat_sim_v0:
+      gpu_device_id: 0
+  task:
+    measurements:
+      distance_to_goal:
+        type: DistanceToGoal
+        distance_to: POINT
+      success:
+        type: Success
+        success_distance: 3.0
+      spl:
+        type: SPL
+  dataset:
+    type: R2RVLN-v1
+    split: train
+    scenes_dir: xxx/RSI-Nav/data/scene/
+    data_path: xxx/RSI-Nav/rollout/continuous_srdf/srdf_episodes_merged.jsonl

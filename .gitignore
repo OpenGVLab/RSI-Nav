@@ -1,0 +1,83 @@
+.ftpignore
+.ftpconfig
+.vscode
+
+# Byte-compiled / optimized / DLL files
+.ipynb_checkpoints/
+__pycache__/
+data/
+*.py[cod]
+*$py.class
+*.swp
+
+/datasets
+/notebooks
+
+*.out
+
+/data
+/connectivity
+/logs
+
+# GitHub upload exclusions
+**/__pycache__/
+**/habitat-lab/
+**/habitat-sim/
+**/data/
+!/qwenvl/data/
+!/qwenvl/data/**
+/qwenvl/data/**/__pycache__/
+/qwenvl/data/**/__pycache__/**
+/qwenvl/data/**/*.py[cod]
+**/Matterport3DSimulator/
+**/Imath/
+**/results/
+
+causal_conv1d-1.6.0+cu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl
+flash_attn-2.8.3+cu12torch2.7cxx11abiTRUE-cp311-cp311-linux_x86_64.whl
+
+*.png
+*.jpg
+*.jpeg
+*.PNG
+*.JPG
+*.JPEG
+
+# Large generated datasets / evaluation artifacts
+/rollout/mantis*.json
+/rollout/srdf_*.json
+/rollout/splits_w8/
+/rollout/continuous_srdf/*.jsonl
+/rollout/continuous_srdf/anno/
+/eval/eval_vln/*.jsonl
+/rejcsamp/*.jsonl
+
+# Archives and build artifacts
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Nested repository/tool metadata
+**/.git/
+**/.agents/
+
+# Local caches / backup files
+**/.cache/
+*.bak
+
+# ScanQA evaluation package
+/eval/scanqa_eval/
+
+#ckpt
+ckpt/
+
+#data
+data_sample/
+
+# README illustrations
+!/assets/teaser.png
+!/assets/method.png

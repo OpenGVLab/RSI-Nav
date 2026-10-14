@@ -1,10 +1,9 @@
 # RSI-Nav: Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping
 
-<!-- Replace the placeholder targets with RSI-Nav's arXiv and Hugging Face paper URLs when available. -->
-[![arxiv](https://img.shields.io/badge/arXiv-Coming_soon-red?logo=arxiv)](# "RSI-Nav paper coming soon")
-[![hf](https://img.shields.io/badge/Hugging_Face-Coming_soon-FF9D00?logo=huggingface&logoColor=white)](# "RSI-Nav paper page coming soon")
+[![arxiv](https://img.shields.io/badge/arXiv_2610.15782-red?logo=arxiv)](http://arxiv.org/abs/2610.15782)
+[![hf](https://img.shields.io/badge/Hugging_Face-FF9D00?logo=huggingface&logoColor=white)](https://huggingface.co/papers/2610.15782)
 
-#### [Songze Li](https://scholar.google.com/citations?user=8rBMUD4AAAAJ), [Haoming Gu](# "Homepage coming soon"), [Ziyang Gong](https://cuzyoung.github.io/ZiyangGong.github.io/), [Zhitong Wang](https://github.com/zt-wang19), [Gengze Zhou](https://gengzezhou.github.io/), [Zun Wang](https://zunwang1.github.io/), [Yuhan Zhu](https://zyuhan1999.github.io/), [Tianxiang Jiang](# "Homepage coming soon"), [Juanzi Li](https://www.cs.tsinghua.edu.cn/info/1111/3487.htm), [Qi Wu](http://www.qi-wu.me/), [Weinan Zhang](https://wnzhang.net/), [Yu Qiao](https://scholar.google.com/citations?hl=en&user=gFtI-8QAAAAJ), [Wenwei Zhang](https://zhangwenwei.cn/), [Yi Wang](https://shepnerd.github.io/)
+#### [Songze Li](https://scholar.google.com/citations?user=8rBMUD4AAAAJ), [Haoming Gu](https://scholar.google.com/citations?hl=zh-CN&user=Kn2WmqkAAAAJ), [Ziyang Gong](https://cuzyoung.github.io/ZiyangGong.github.io/), [Zhitong Wang](https://github.com/zt-wang19), [Gengze Zhou](https://gengzezhou.github.io/), [Zun Wang](https://zunwang1.github.io/), [Yuhan Zhu](https://zyuhan1999.github.io/), [Tianxiang Jiang](https://scholar.google.com/citations?user=54jmoNYAAAAJ), [Juanzi Li](https://www.cs.tsinghua.edu.cn/info/1111/3487.htm), [Qi Wu](https://researchers.adelaide.edu.au/profile/qi.wu01), [Weinan Zhang](https://homepage.hit.edu.cn/zhangweinan?lang=en), [Yu Qiao](https://scholar.google.com/citations?hl=en&user=gFtI-8QAAAAJ), [Wenwei Zhang](https://zhangwenwei.cn/), [Yi Wang](https://shepnerd.github.io/)
 
 ![RSI-Nav teaser](assets/teaser.png)
 
@@ -129,19 +128,17 @@ Please [open an issue](https://github.com/OpenGVLab/RSI-Nav/issues) with the com
 
 ## 🔗 Citation
 
-A public arXiv identifier has not yet been supplied for this checkout. Until formal bibliographic information is available, cite the manuscript as:
+If you find our work useful in your research, please consider starring 🌟 this repo and cite the following paper:
 
 ```bibtex
-@misc{li2026rsinav,
+@article{li2026datacentric,
   title={Data-Centric Recursive Self-Improvement for Navigation via Policy-Synchronized Language-Action Dual Bootstrapping},
   author={Li, Songze and Gu, Haoming and Gong, Ziyang and Wang, Zhitong and Zhou, Gengze and Wang, Zun and Zhu, Yuhan and Jiang, Tianxiang and Li, Juanzi and Wu, Qi and Zhang, Weinan and Qiao, Yu and Zhang, Wenwei and Wang, Yi},
-  year={2026},
-  note={Preprint}
+  journal={arXiv preprint arXiv:2610.15782},
+  year={2026}
 }
 ```
 
 ## 👏 Acknowledgements
 
 We thank the teams behind [Qwen](https://github.com/QwenLM), [Habitat](https://github.com/facebookresearch/habitat-lab), [Matterport3D](https://niessner.github.io/Matterport/), and [VLN-SRDF](https://github.com/wz0919/VLN-SRDF) for making their models, datasets, and code publicly available.
-
-RSI-Nav is released under the [MIT License](LICENSE). The training files retain upstream FastChat/Stanford Alpaca attribution and Apache-2.0 notices.
